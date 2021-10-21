@@ -15,6 +15,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
         //super.addViewControllers(registry);
         //浏览器发送/test请求转到/success界面
         registry.addViewController("/test").setViewName("success");
+        registry.addViewController("/login").setViewName("index");
     }
     @Bean
     public WebMvcConfigurerAdapter webMvcConfigurerAdapter(){
